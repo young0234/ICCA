@@ -108,7 +108,14 @@ body {
   &.active {
     display: block;
   }
-
+  &.greenhouse{
+    margin: 100px auto;
+    width: 1265px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 5px gray;
+  }
   /********** greeting **********/
   /* tab-content01  */
   // 인사말
@@ -598,13 +605,14 @@ body {
   /* tab-content02  */
   // 기후변화란
   .exposition-inner{
-    margin: 100px auto 50px;
+    margin: 30px auto;
     p{
       text-align: center;
       margin: auto;
       line-height: 1.2;
     }
     .IPCC{
+      background: rgb(255, 255, 237);
       box-shadow: 0 0 5px gray;
       border-radius: 20px;
       width: 1000px;
@@ -639,9 +647,36 @@ body {
           }
         }
         p{
-  
+          color: gray;
+          font-size: 14px;
         }
   
+      }
+    }
+    p{
+      text-align: center;
+      margin: 20px auto;
+      line-height: 1.5;
+    }
+  }
+  .greenhouse-gas-inner{
+    &.reduce{
+      margin-bottom: 20px;
+    }
+    h1{
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 15px;
+      color: #926D49;
+    }
+    text-align: center;
+    p{
+      margin: 20px;
+      line-height: 1.5;
+      strong{
+        color: $Main-orange;
       }
     }
   }

@@ -901,6 +901,16 @@ body {
 .tab-content.active {
   display: block;
 }
+.tab-content.greenhouse {
+  margin: 100px auto;
+  width: 1265px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 5px gray;
+          box-shadow: 0 0 5px gray;
+}
 .tab-content .detail-summary {
   background-color: #F5F5F5;
   height: 1000px;
@@ -1451,7 +1461,7 @@ body {
   line-height: 1.2;
 }
 .tab-content .exposition-inner {
-  margin: 100px auto 50px;
+  margin: 30px auto;
 }
 .tab-content .exposition-inner p {
   text-align: center;
@@ -1459,6 +1469,7 @@ body {
   line-height: 1.2;
 }
 .tab-content .exposition-inner .IPCC {
+  background: rgb(255, 255, 237);
   -webkit-box-shadow: 0 0 5px gray;
           box-shadow: 0 0 5px gray;
   border-radius: 20px;
@@ -1500,6 +1511,36 @@ body {
 }
 .tab-content .global-average-inner .card-wrap .img-card .img-wrap img {
   width: auto;
+}
+.tab-content .global-average-inner .card-wrap .img-card p {
+  color: gray;
+  font-size: 14px;
+}
+.tab-content .global-average-inner p {
+  text-align: center;
+  margin: 20px auto;
+  line-height: 1.5;
+}
+.tab-content .greenhouse-gas-inner {
+  text-align: center;
+}
+.tab-content .greenhouse-gas-inner.reduce {
+  margin-bottom: 20px;
+}
+.tab-content .greenhouse-gas-inner h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  color: #926D49;
+}
+.tab-content .greenhouse-gas-inner p {
+  margin: 20px;
+  line-height: 1.5;
+}
+.tab-content .greenhouse-gas-inner p strong {
+  color: #FF6C11;
 }
 .tab-content .FAQ-inner {
   margin: 100px auto;
