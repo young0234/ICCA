@@ -1,5 +1,5 @@
 /* header */
-fetch('../include/header.html')
+fetch('/ICCA/include/header.html')
   .then(response => response.text())
   .then(data => {
     document.querySelector('.header-include').innerHTML = data;
@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 /* footer */
-fetch('../include/footer.html')
+fetch('/ICCA/include/footer.html')
   .then(response => response.text())
   .then(data => {
     document.querySelector('.footer-include').innerHTML = data;
