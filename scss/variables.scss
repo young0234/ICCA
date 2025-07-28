@@ -1,0 +1,38 @@
+/* color */
+
+$White: #FFFFFF;
+$Light-gray: #F1F1F1;
+$Dark-gray: #BDBDBD;
+$Dim-gray: #ADADAD;
+$Light-black: #626262;
+$Silver-black: #484848;
+$Dim-black: #414141;
+$Black: #000000;
+
+$Main-orange: #FF6C11;
+$Hover-orange: #f83a00;
+$Light-yellow: #FCFFED;
+$Light-white: #F3F3F3;
+$Main-green: #8CA900;
+$Sub-green: #4E7634;
+$Brown: #926D49;            
+
+
+/* fonts */
+
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+$Main-Font: 'GmarketSansMedium';
+
+
+/* font size */
+
+$h1-px : 35px;
+$h2-px : 30px;
+$h3-px : 24px;
+$h4-px : 20px;
+$h5-px : 18px;

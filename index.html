@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>기후변화행동연구소</title>
+
+  <!---------------- favicon ---------------->
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+  <!---------------- aos ---------------->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!---------------- swiper ---------------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!---------------- bootstrap icons ---------------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!---------------- iconify ---------------->
+  <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+
+
+  <!---------------- style ---------------->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header -->
+    <div class="header-include"></div>
+
+    <!-- banner -->
+    <section class="banner">
+      <div class="swiper mySwiper01">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide banner01">
+            <img src="images/mainBanner01.png" alt="">
+            <div class="texts">
+              <h1>지금, 지구는 S.O.S를<br>보내고 있습니다.</h1>
+              <p>더 늦기 전에, 행동해야 합니다.</p>
+              <button>자세히 보기</button>
+            </div>
+          </div>
+          <div class="swiper-slide banner02">
+            <img src="images/mainBanner02.png" alt="">
+            <div class="texts">
+              <h1>더 늦기 전에,<br>우리는 달라져야 합니다.</h1>
+              <p>기후를 지키는 건, 내일을 지키는 일입니다.</p>
+              <button>자세히 보기</button>
+            </div>
+          </div>
+          <div class="swiper-slide banner03">
+            <img src="images/mainBanner03.png" alt="">
+            <div class="texts">
+              <h1>변화는 가능하고,<br>
+                행동은 희망이 됩니다.</h1>
+              <p>우리의 선택이 기후의 미래를 만듭니다.</p>
+              <button>자세히 보기</button>
+            </div>
+          </div>
+          <div class="swiper-slide banner04">
+            <img src="images/mainBanner04.png" alt="">
+            <div class="texts">
+              <h1>이 지구는 우리의 것이 아니라, <br>
+                다음 세대에게 빌린 것입니다.</h1>
+              <p>기후 행동은 아이들을 위한 약속입니다.</p>
+              <button>자세히 보기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pagination">
+        <div class="pagination-inner">
+          <div class="progress-bar-container">
+            <div class="progress-bar"></div>
+          </div>
+          <div class="control-buttons">
+            <button class="btn-prev" aria-label="이전 슬라이드">
+              <i class="bi bi-chevron-left"></i>
+            </button>
+            <button class="btn-next" aria-label="다음 슬라이드">
+              <i class="bi bi-chevron-right"></i>
+            </button>
+            <button class="btn-play-pause" aria-label="재생/일시정지">
+              <i class="bi bi-pause pause-icon"></i>
+              <i class="bi bi-play-fill play-icon" style="display:none;"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="easy-donation">
+        <p class="summary">
+          기후변화행동연구소의 주인은 시민입니다. <br> 시민의 힘, 과학의 눈으로 기후변화에 맞서는<br> 연구소 회원이 되어 함께해 주십시오.
+        </p>
+        <div class="line"></div>
+        <div class="donate-buttons">
+          <div class="montly">
+            <input type="radio" id="donate-monthly" name="donation-type" checked> 
+            <label for="donate-monthly">정기후원</label>
+          </div>
+          <div class="date">
+            <input type="radio" id="donate-date" name="donation-type">
+            <label for="donate-date">일시후원</label>
+          </div>
+        </div>
+        <div class="dropdown-input-group">
+          <select id="dropdown" class="select-price">
+            <option value="20,000">20,000</option>
+            <option value="30,000" selected>30,000</option>
+            <option value="50,000">50,000</option>
+            <option value="100,000">100,000</option>
+            <option value="custom">직접 입력</option>
+          </select>
+          <input type="text" id="input-box" placeholder="선택한 항목이 표시됩니다" disabled />
+          <p class="unit">원</p>
+        </div>
+        
+        <button class="donate-btn">
+          <a href="#">
+            후원하기
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </button>
+      </div>
+      <div class="short-detail">
+        <div class="detail-inner">
+          <div class="call">
+            <p>후원문의</p>
+            <div class="line"></div>
+            <p>02-2038-2874</p>
+          </div>
+          <div class="recipt">
+            <p>기부금 영수증 발급</p>
+            <div class="line"></div>
+            <p>iccakorea@gmail.com</p>
+          </div>
+          <div class="account">
+            <p>후원계좌</p>
+            <div class="line"></div>
+            <p>우리은행 1005-702-442509 <span>((사)기후변화행동연구소)</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- card-news -->
+    <section class="card-news">
+      <div class="card-news-inner">
+        <div class="title">
+          <h2>카드뉴스</h2>
+          <h5>아동을 지키는 생생한 현장과 후원자님들의 이야기를 전합니다.</h5>
+        </div>
+    
+        <div class="swiper mySwiper02">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide card-news01">
+              <a href="#">
+                <img src="images/cardNews01.png" alt="">
+                <div class="badge">안내</div>
+                <div class="card-title">
+                  <p>[ICCA 카드뉴스 #153] OECD 국가별 전력 소비 구조 변화: 산업 부문 vs 가정 부문</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide card-news02">
+              <a href="#">
+                <img src="images/cardNews02.png" alt="">
+                <div class="badge">안내</div>
+                <div class="card-title">
+                  <p>[ICCA 카드뉴스 #152] 온실가스 순배출량(LULUCF 포함) 상위 국가(1970~2023)</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide card-news03">
+              <a href="#">
+                <img src="images/cardNews03.png" alt="">
+                <div class="badge">안내</div>
+                <div class="card-title">
+                  <p>[ICCA 카드뉴스 #151] 산업화 이전 대비 2015~2024년 평균 전 지구 지역·해역별 표면온도 변화 수준</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide card-news04">
+              <a href="#">
+                <img src="images/cardNews04.png" alt="">
+                <div class="badge">안내</div>
+                <div class="card-title">
+                  <p>[ICCA 카드뉴스 #150] 전 세계 플라스틱의 물질흐름(2022년 기준; 단위: 백만 톤/연)</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide card-news05">
+              <a href="#">
+                <img src="images/cardNews05.png" alt="">
+                <div class="badge">안내</div>
+                <div class="card-title">
+                  <p>[ICCA 카드뉴스 #149] 2014~2022년 온실가스 배출량 수정, 감축목표에 미치는 영향</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide card-news06">
+              <a href="#">
+                <img src="images/cardNews06.png" alt="">
+                <div class="badge">안내</div>
+                <div class="card-title">
+                  <p>[ICCA 카드뉴스 #148] 2014~2022년 누락 석탄 소비량을 포함한 국가 에너지 통계 요약</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide card-news07">
+              <a href="#">
+                <img src="images/cardNews07.png" alt="">
+                <div class="badge">안내</div>
+                <div class="card-title">
+                  <p>[ICCA 카드뉴스 #147] 2022년 기준 부문별 국가 온실가스 배출·흡수량
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide card-news08">
+              <a href="#">
+                <img src="images/cardNews08.png" alt="">
+                <div class="badge">안내</div>
+                <div class="card-title">
+                  <p>[ICCA 카드뉴스 #146] 외국 언론이 꼽은 2024년의 기후·생물다양성 도서
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="pagination02">
+          <div class="pagination-inner">
+            <div class="progress-bar-container">
+              <div class="progress-bar"></div>
+            </div>
+            <div class="control-buttons02">
+              <button class="btn-prev02" aria-label="이전 슬라이드">
+                <i class="bi bi-chevron-left"></i>
+              </button>
+              <button class="btn-next02" aria-label="다음 슬라이드">
+                <i class="bi bi-chevron-right"></i>
+              </button>
+              <button class="btn-play-pause02" aria-label="재생/일시정지">
+                <i class="bi bi-pause pause-icon02"></i>
+                <i class="bi bi-play-fill play-icon02" style="display:none;"></i>
+              </button>
+            </div>
+          </div>
+        </div> 
+    
+      </div>
+    </section>
+
+    <!-- institution -->
+    <section class="institution">
+      <div class="title">
+        <h2>기관소개</h2>
+        <h5>우리는 데이터와 사람을 연결해, 기후위기에 대응하는 행동의 변화를 만들어갑니다.</h5>
+      </div>
+      <div class="swiper mySwiper03">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide background01">
+            <div class="texts">
+              <h1>
+                <strong>01</strong> 기후위기는 ‘인식’을 넘어 ‘행동’으로만 극복할 수 있다.
+              </h1>
+              <a href="#">
+                인사말 보러가기
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide background02">
+            <div class="texts">
+              <h1>
+                <strong>02</strong>시민과 함께, 정책과 과학으로 기후행동을 이끈다.
+              </h1>
+              <a href="#">
+                비전 보러가기
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide background03">
+            <div class="texts">
+              <h1>
+                <strong>03</strong> 시민과 함께 기후행동을 실천하고 확산한다.
+              </h1>
+              <a href="#">
+                주요활동 보러가기
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="institution-inner">
+        <div class="card">
+          <div class="icon-wrap">
+            <img src="images/icon01.png" alt="">
+          </div>
+          <p>
+            기후변화 문제 해결을 위해 정책 연구와 <strong>시민 행동 촉진</strong>에 앞장서는 전문 연구소입니다.
+          </p>
+        </div>
+        <div class="card">
+          <div class="icon-wrap">
+            <img src="images/icon02.png" alt="">
+          </div>
+          <p>
+            정책 제안, 시민 캠페인, 교육 프로그램, 기후 관련 데이터 분석 등<br> <strong>다양한 활동</strong>을 수행합니다.
+          </p>
+        </div>
+        <div class="card">
+          <div class="icon-wrap">
+            <img src="images/icon03.png" alt="">
+          </div>
+          <p>
+            국내외 정책 반영과 시민 인식 제고를 통해 기후변화 대응에 <strong>실질적인 변화</strong>를 이끌어왔습니다.
+          </p>
+        </div>
+        <div class="card">
+          <div class="icon-wrap">
+            <img src="images/icon04.png" alt="">
+          </div>
+          <p>
+            지속 가능한 미래를 위한 실천적 기후행동 확산과 과학적 근거 기반의 <strong>정책 혁신</strong>을 추구합니다.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- business -->
+    <section class="business">
+      <div class="business-inner">
+        <div class="title">
+          <h2>사업소개</h2>
+          <h5>아래와 같은 사업을 중심으로 시민의 행동 변화를 이끌고, 기후위기 대응의 실질적인 기반을 만들어갑니다.</h5>
+        </div>
+        <div class="tab-buttons">
+          <button class="active" data-tab="0">연구 / 정책개발</button>
+          <button data-tab="1">캠페인 / 공익활동</button>
+          <button data-tab="2">교육 / 워크숍</button>
+        </div>
+        <div class="tab-content">
+          <div class="tab-item active" data-tab="0">
+            <img src="images/businessIntro01.png" alt="이미지 1" />
+            <div class="tab-text">
+              <h2>연구 / 정책개발</h2>
+              <p>온실가스 감축, 기후 적응 정책 연구합니다</p>
+              <a href="#">자세히 보기
+                <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="tab-item" data-tab="1">
+            <img src="images/businessIntro02.png" alt="이미지 1" />
+            <div class="tab-text">
+              <h2>캠페인 / 공익활동</h2>
+              <p>지자체 탄소중립 모니터링 발표회 등 다양한 행사 개최합니다</p>
+              <a href="#">자세히 보기<i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="tab-item" data-tab="2">
+            <img src="images/businessIntro03.png" alt="이미지 3" />
+            <div class="tab-text">
+              <h2>교육 / 워크숍</h2>
+              <p>기후교육, 전문가 강연, 워크숍 진행합니다</p>
+              <a href="#">자세히 보기<i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-texts">
+          <p>
+            <strong class="count" data-target="13">0</strong>년째 기후행동 연구 수행 중
+          </p>
+          <p>
+            전국<strong class="count" data-target="31">0</strong>개 시군과 탄소중립 모니링
+          </p>
+          <p>
+            연간 평균<strong class="count" data-target="20">0</strong>회 이상 기후 교육/워크숍
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- campaign -->
+    <section class="campaign">
+      <div class="swiper mySwiper04">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide campaign-swiper">
+            <div class="big-slide big-bg01">
+              <div class="title title-black">초록열매 종이팩 컬렉티브<br>정책포럼#11</div>
+              <div class="description description-black">지자체 주도의 종이팩 자원순환 활성화 방안</div>
+              <a href="#" class="btn-detail">자세히 보기
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+            <div class="right-content">
+              <div class="main-title">
+                <h1>캠페인</h1>
+                <p>작은 변화가 모여 큰 전환을 만듭니다</p>
+              </div>
+              <div class="small-cards">
+                <div class="small-card card02"><div class="small-title">남원, 마을과 함께 농촌쓰레기 자원순환을 디자인하다</div></div>
+                <div class="small-card card03"><div class="small-title">홍천군 폐농약·폐농약병 수거시스템 활성화 방안</div></div>
+                <div class="small-card card04"><div class="small-title">종이팩 재활용률 13%, 반전의 시작</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide campaign-swiper">
+            <div class="big-slide big-bg02">
+              <div class="title">초록열매 농촌쓰레기 컬렉티브<br> 정책포럼 #1</div>
+              <div class="description">남원, 마을과 함께 농촌쓰레기 <br>자원순환을 디자인하다</div>
+              <a href="#" class="btn-detail">자세히 보기
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+            <div class="right-content">
+              <div class="main-title">
+                <h1>캠페인</h1>
+                <p>작은 변화가 모여 큰 전환을 만듭니다</p>
+              </div>
+              <div class="small-cards">
+                <div class="small-card card03"><div class="small-title">홍천군 폐농약·폐농약병 수거시스템 활성화 방안</div></div>
+                <div class="small-card card04"><div class="small-title">종이팩 재활용률 13%, 반전의 시작</div></div>
+                <div class="small-card card05"><div class="small-title">종이팩 자원순환: 협력과 연대</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide campaign-swiper">
+            <div class="big-slide big-bg03">
+              <div class="title">초록열매 농촌쓰레기 정책포럼#1</div>
+              <div class="description">홍천군 폐농약·폐농약병 수거시스템 활성화 방안</div>
+              <a href="#" class="btn-detail">자세히 보기
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+            <div class="right-content">
+              <div class="main-title">
+                <h1>캠페인</h1>
+                <p>작은 변화가 모여 큰 전환을 만듭니다</p>
+              </div>
+              <div class="small-cards">
+                <div class="small-card card04"><div class="small-title">종이팩 재활용률 13%, 반전의 시작</div></div>
+                <div class="small-card card05"><div class="small-title">종이팩 자원순환: 협력과 연대</div></div>
+                <div class="small-card card06"><div class="small-title">플라스틱 대체재 종이팩, 진정한 대안이 되려면?</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide campaign-swiper">
+            <div class="big-slide big-bg04">
+              <div class="title">초록열매 종이팩 컬렉티브<br> 정책포럼#10</div>
+              <div class="description">종이팩 재활용률 13%, 반전의 시작</div>
+              <a href="#" class="btn-detail">자세히 보기
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+            <div class="right-content">
+              <div class="main-title">
+                <h1>캠페인</h1>
+                <p>작은 변화가 모여 큰 전환을 만듭니다</p>
+              </div>
+              <div class="small-cards">
+                <div class="small-card card05"><div class="small-title">종이팩 자원순환: 협력과 연대</div></div>
+                <div class="small-card card06"><div class="small-title">플라스틱 대체재 종이팩, 진정한 대안이 되려면?</div></div>
+                <div class="small-card card01"><div class="small-title">지자체 주도의 종이팩 자원순환 활성화 방안</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide campaign-swiper">
+            <div class="big-slide big-bg05">
+              <div class="title title-black">초록열매 종이팩 컬렉티브<br> 정책포럼#9 </div>
+              <div class="description description-black">종이팩 자원순환: 협력과 연대</div>
+              <a href="#" class="btn-detail">자세히 보기
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+            <div class="right-content">
+              <div class="main-title">
+                <h1>캠페인</h1>
+                <p>작은 변화가 모여 큰 전환을 만듭니다</p>
+              </div>
+              <div class="small-cards">
+                <div class="small-card card06"><div class="small-title">플라스틱 대체재 종이팩, 진정한 대안이 되려면?</div></div>
+                <div class="small-card card01"><div class="small-title">지자체 주도의 종이팩 자원순환 활성화 방안</div></div>
+                <div class="small-card card02"><div class="small-title">남원, 마을과 함께 농촌쓰레기 자원순환을 디자인하다</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide campaign-swiper">
+            <div class="big-slide big-bg06">
+              <div class="title">초록열매 종이팩 컬렉티브<br> 정책포럼#8</div>
+              <div class="description">플라스틱 대체재 종이팩, 진정한 대안이 되려면?</div>
+              <a href="#" class="btn-detail">자세히 보기
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+            <div class="right-content">
+              <div class="main-title">
+                <h1>캠페인</h1>
+                <p>작은 변화가 모여 큰 전환을 만듭니다</p>
+              </div>
+              <div class="small-cards">
+                <div class="small-card card01"><div class="small-title">지자체 주도의 종이팩 자원순환 활성화 방안</div></div>
+                <div class="small-card card02"><div class="small-title">남원, 마을과 함께 농촌쓰레기 자원순환을 디자인하다</div></div>
+                <div class="small-card card03"><div class="small-title">홍천군 폐농약·폐농약병 수거시스템 활성화 방안</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 슬라이드 내부에 고정 -->
+        <div class="pagination04">
+          <div class="progress-container04">
+            <div class="progress-bar" id="main-progress-bar"></div>
+          </div>
+          <div class="buttons">
+            <button class="btn-prev04"><i class="bi bi-chevron-left"></i></button>
+            <button class="btn-next04"><i class="bi bi-chevron-right"></i></button>
+            <button class="btn-play-pause04"><i class="bi bi-pause pause-icon02"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- review -->
+    <section class="review">
+      <div class="review-inner">
+        <div class="review-left">
+          <h1>후원자님이 남겨주신<br>따듯한 마음</h1>
+          <div class="pagenation">
+            <button id="btn-up"><i class="bi bi-chevron-up"></i></button>
+            <button id="btn-down"><i class="bi bi-chevron-down"></i></button>
+            <button id="btn-stop"><i class="bi bi-pause pause-icon02"></i></button>
+          </div>
+        </div>
+  
+        <div class="review-right">
+          <div class="first-slide">
+            <div class="slide-inner">
+              <div class="box">
+                <div class="title">
+                  <h3>연구소 운영</h3>
+                  <span>정기후원</span>
+                </div>
+                <p class="summary">신뢰할 수 있는 곳에 후원한다는 게 중요했는데, 여기라면 안심돼요.</p>
+                <p class="date">박**  2025.07.17</p>
+              </div>
+              <div class="box">
+                <div class="title">
+                  <h3>시민정책포럼</h3>
+                  <span>정기후원</span>
+                </div>
+                <p class="summary">기후변화는 모두의 문제, 함께 행동할 수 있어 든든해요.</p>
+                <p class="date">이**  2025.07.05</p>
+              </div>
+              <div class="box">
+                <div class="title">
+                  <h3>녹색ODA센터</h3>
+                  <span>정기후원</span>
+                </div>
+                <p class="summary">후원금이 실제 활동에 쓰이는 걸 보니 보람이 느껴져요.</p>
+                <p class="date">김**  2025.06.30</p>
+              </div>
+              <div class="box">
+                <div class="title">
+                  <h3>기후행동</h3>
+                  <span>정기후원</span>
+                </div>
+                <p class="summary">작은 후원이지만 지구를 위한 큰 발걸음 같아서 뿌듯해요.</p>
+                <p class="date">최**  2025.06.23</p>
+              </div>
+              <div class="box">
+                <div class="title">
+                  <h3>뉴스레터후원</h3>
+                  <span>정기후원</span>
+                </div>
+                <p class="summary">아이들한테도 좋은 본보기가 되는 것 같아 뿌듯합니다.</p>
+                <p class="date">유**  2025.06.15</p>
+              </div>
+              <div class="box">
+                <div class="title">
+                  <h3>기후클럽</h3>
+                  <span>정기후원</span>
+                </div>
+                <p class="summary">내가 기후위기 해결에 조금이나마 보탬이 된다는 느낌이 들어 좋아요.</p>
+                <p class="date">류**  2025.07.05</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="second-slide">
+            <div class="slide-inner">
+              <div class="box">
+                <div class="title">
+                  <h3>기후행동</h3>
+                  <span>정기후원</span>
+                </div>
+                <p class="summary">기후변화는 모두의 문제, 함께 행동할 수 있어 든든해요.</p>
+                <p class="date">오**  2025.06.14</p>
+              </div>
+              <div class="box">
+                <div class="title">
+                  <h3>뉴스레터 후원</h3>
+                  <span>일시후원</span>
+                </div>
+                <p class="summary">후원자에게 보내주는 뉴스레터 덕분에 기후 이슈를 더 잘 알게 됐어요.</p>
+                <p class="date">지**  2025.06.02</p>
+              </div>
+              <div class="box">
+                <div class="title">
+                  <h3>시민정책포럼</h3>
+                  <span>정기후원</span>
+                </div>
+                <p class="summary">작은 후원이지만 지구를 위한 큰 발걸음 같아서 뿌듯해요.</p>
+                <p class="date">조**  2025.05.29</p>
+              </div>
+              <div class="box">
+                <div class="title">
+                  <h3>연구소 운영</h3>
+                  <span>정기후원</span>
+                </div>
+                <p class="summary">후원금이 실제 활동에 쓰이는 걸 보니 보람이 느껴져요.</p>
+                <p class="date">유**  2025.05.13</p>
+              </div>
+              <div class="box">
+                <div class="title">
+                  <h3>녹색 ODA 센터</h3>
+                  <span>정기후원</span>
+                </div>
+                <p class="summary">미래 세대를 위한 선택, 후회 없는 후원입니다.</p>
+                <p class="date">정**  2025.06.15</p>
+              </div>
+              <div class="box">
+                <div class="title">
+                  <h3>기후행동</h3>
+                  <span>정기후원</span>
+                </div>
+                <p class="summary">친환경적인 삶을 실천하는 데 동기부여가 되었어요.</p>
+                <p class="date">백**  2025.07.05</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- new-donate -->
+    <section class="new-donate">
+      <div class="background-circle">
+        <img class="circle01" src="images/backgroundRound01.png" alt="">
+        <img class="circle02" src="images/backgroundRound02.png" alt="">
+      </div>
+      <div class="new-donate-inner">
+        <h1>후원이 처음이신가요?</h1>
+
+        <div class="new-donate-slider-wrap">
+          <div class="swiper-button-prev"></div>
+  
+          <div class="swiper mySwiper05">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="icon-img">
+                  <img src="images/new-icon01.png" alt="">
+                </div>
+                <h3>연구소 운영</h3>
+                <p>지속가능한 미래를 위한 연구,<br> 
+                  당신의 후원이 과학을 움직입니다.</p>
+                  <a href="#">더보기<i class="bi bi-plus"></i></a>
+              </div>
+              <div class="swiper-slide">
+                <div class="icon-img">
+                  <img src="images/new-icon02.png" alt="">
+                </div>
+                <h3>시민정책포럼</h3>
+                <p>시민의 목소리가 정책이 되도록,<br> 
+                  함께 힘을 보태주세요.</p>
+                  <a href="#">더보기<i class="bi bi-plus"></i></a>
+              </div>
+              <div class="swiper-slide">
+                <div class="icon-img">
+                  <img src="images/new-icon03.png" alt="">
+                </div>
+                <h3>녹색 ODA 센터</h3>
+                <p>기후위기에 취약한 지구촌 이웃에게,<br> 당신의 후원이 희망이 됩니다.</p>
+                  <a href="#">더보기<i class="bi bi-plus"></i></a>
+              </div>
+              <div class="swiper-slide">
+                <div class="icon-img">
+                  <img src="images/new-icon04.png" alt="">
+                </div>
+                <h3>기후행동</h3>
+                <p>말이 아닌 행동이 필요할 때,<br> 당신의 후원이 변화의 시작입니다.</p>
+                  <a href="#">더보기<i class="bi bi-plus"></i></a>
+              </div>
+              <div class="swiper-slide">
+                <div class="icon-img">
+                  <img src="images/new-icon05.png" alt="">
+                </div>
+                <h3>뉴스레터 후원</h3>
+                <p> 기후 정보를 널리 알리는 힘,<br> 작지만 강한 후원으로 가능합니다.</p>
+                  <a href="#">더보기<i class="bi bi-plus"></i></a>
+              </div>
+              <div class="swiper-slide">
+                <div class="icon-img">
+                  <img src="images/new-icon06.png" alt="">
+                </div>
+                <h3>기후클럽</h3>
+                <p> 같은 생각, 같은 지구를 위한 사람들과<br> 연결되는 가장 쉬운 방법, 후원하세요.</p>
+                  <a href="#">더보기<i class="bi bi-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        
+          <div class="swiper-button-next"></div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- news-letter -->
+    <section class="news-letter">
+      <div class="news-letter-inner">
+        <div class="news-letter-left">
+          <h3>뉴스레터 신청</h3>
+          <p>
+            기후를 위한 변화는 정보에서 시작됩니다. <br>
+            <strong>뉴스레터</strong>로 매달 기후소식을 받아보세요.</p>
+        </div>
+        <div class="news-letter-right">
+          <div class="form-top">
+            <input type="text" class="name" placeholder="이름">
+            <input type="email" class="email" placeholder="이메일 주소">
+            <button>신청하기</button>
+          </div>
+          <div class="form-bottom">
+            <input type="checkbox" id="agree" />
+            <label for="agree">기후변화행동연구소의 소식, 후원정보 전달 목적으로 이름, 이메일주소를 수집하며, 수신거부시까지 이용, 보유하는데 동의합니다.</label>
+          </div>
+          
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="notice">
+      <div class="notice-inner">
+        <div class="title">
+          <h3>공지 / 뉴스</h3>
+          <a href="#" class="more-btn">더보기<i class="bi bi-plus"></i></a>
+        </div>
+        <div class="notice-detail">
+          <div class="announcement">
+            <ul class="notice-list">
+              <li><a href="#">
+                <p class="badge">공지사항</p>
+                <p class="notice-text">[안내] 녹색ODA포럼: 개발도상국 농업 부문의 기후위기 영향 및 도전과제(8월 1일)</p>
+                <p class="date">2025-06-06</p>
+              </a></li>
+              <li><a href="#">
+                <p class="badge">공지사항</p>
+                <p class="notice-text">[안내] 생태문화학교 4기를 모집합니다.</p>
+                <p class="date">2025-06-06</p>
+              </a></li>
+              <li><a href="#">
+                <p class="badge">공지사항</p>
+                <p class="notice-text">[안내] ‘사물의 의회’ – 새로운 기후 민주주의를 함께 만들어갈 시민을 찾습니다 (6월 17일~7월 31일)</p>
+                <p class="date">2025-06-06</p>
+              </a></li>
+              <li><a href="#">
+                <p class="badge">공지사항</p>
+                <p class="notice-text">[안내] 한강 유역 물관리의 현안과 미래 비전 (6월 19일 14시~)</p>
+                <p class="date">2025-06-06</p>
+              </a></li>
+              <li><a href="#">
+                <p class="badge">공지사항</p>
+                <p class="notice-text">[안내] 기후 책 공부모임 10강 '나의, 우리의 기후행동' (온라인 zoom)</p>
+                <p class="date">2025-06-06</p>
+              </a></li>
+              <li><a href="#">
+                <p class="badge">공지사항</p>
+                <p class="notice-text">[안내] 기후 책 공부모임 10강 '나의, 우리의 기후행동' (온라인 zoom)</p>
+                <p class="date">2025-06-06</p>
+              </a></li>
+            </ul>
+          </div>
+          <div class="other-facilities">
+            <div class="facilities">
+              <div class="facility-top">
+                <img class="archive-logo" src="images/archiveLogo.png" alt="">
+                <i class="bi bi-chevron-right"></i>
+              </div>
+              <div class="facility-bottom">
+                <p>재단법인 숲과나눔은 지속가능하고<br>
+                  안전하며 건강한 사회를 만듭니다.</p>
+                  <img class="archive-icon" src="images/archiveicon.png" alt="">
+              </div>
+            </div>
+            <div class="facilities">
+              <div class="facility-top">
+                <img class="oda-logo" src="images/odaLogo.png" alt="">
+                <i class="bi bi-chevron-right"></i>
+              </div>
+              <div class="facility-bottom">
+                <p>환경과 인류의 공존을 추구하는<br>
+                  개발협력, 녹색ODA센터</p>
+                  <img class="oda-icon" src="images/odaicon.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- footer -->
+    <div class="footer-include"></div>
+
+    <!---------------- aos ---------------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
+    <!---------------- swiper ---------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+    <!-- js -->
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,1091 @@
+/* Import Local SCSS Files */
+@import 'variables', 'reset', 'header-footer';
+
+/* common */
+body {
+  overflow-x: hidden;
+}
+/* inner */
+[class*=inner] {
+  width: 1265px;
+  height: inherit;
+  margin: auto;
+}
+
+/* header */
+.header {
+  background-color: #fff;
+  color: #222;
+  transition: none;
+  .menu-bar li.main-menu a{
+    color: #222 !important;
+    &:hover{color: $Main-orange !important;}
+  }
+  .aside {
+    a {
+      color: #222 !important;
+      &:hover{color: $Main-orange !important;}
+    }
+    .white-fixed {
+      color: white !important;
+      a {
+        color: white !important;
+      }
+      background-color: $Main-orange;
+      &:hover {
+        background-color: $Hover-orange;
+      }
+    }
+  }
+  .logo img {
+    content: url('../images/logo.png'); 
+  }
+  .line {
+    background-color: #000 !important;
+  }
+}
+
+/********** 탭버튼 디자인 **********/
+/* banner */
+.banner{
+  margin-top: 90px;
+  width: 100%; height: 380px;
+  
+  &.banner-bg01{
+    background: url(../images/subpageBanner01.png);
+  }
+  &.banner-bg02{
+    background: url(../images/subpageBanner02.png);
+  }
+  .banner-inner{
+    color: #fff;
+    height: auto;
+    position: relative; 
+    top: 50%;
+    transform: translateY(-50%);
+    h2{font-size: 45px; font-weight: bold; padding-top: 1px;}
+    p{font-size: 18px; margin-top: 30px;}
+  }
+}
+
+/* tab-buttons */
+.tab-buttons {
+  width: 1265px;
+  height: 70px;
+  margin: 70px auto 40px;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #ECECEC;
+  border-radius: 10px;
+  overflow: hidden;
+  button {
+    color: #969696;
+    flex: 1;
+    padding: 15px 0;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    overflow: hidden;
+    background: #fff;
+    & + button {
+      border-left: 1px solid #ECECEC; 
+    }
+    &.active {
+      background: #926D49;
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+}
+
+/* tab-content  */
+.tab-content {
+  display: none;
+  width: 100%;
+  &.active {
+    display: block;
+  }
+
+  /********** greeting **********/
+  /* tab-content01  */
+  // 인사말
+  .detail-summary{
+    background-color: #F5F5F5;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    .hello, .vision{
+      display: flex;
+      div{
+        width: 960px;
+        overflow: hidden;
+        .texts{
+          position: relative;
+          top: 50%; left: 50%;
+          transform: translate(-50%, -50%);
+          width: 590px;
+          padding-top: 5px;
+          h3{
+            color: #926D49;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 35px;
+          
+          }
+          p{
+            font-size: 18px;
+            line-height: 1.2;
+            strong{color: $Main-orange;}
+          }
+        }
+      }
+      
+    }
+  }
+  // 미션
+  .mision{
+    height: 1000px;
+    position: relative;
+    .background-circle{
+      & .circle01{
+        position: absolute;
+        bottom: 100px; left: 300px;
+        z-index: -1;
+      }
+      & .circle02{
+        position: absolute;
+        bottom: 300px; right: 300px;
+        z-index: -1; 
+      }
+      & .circle03{
+        position: absolute;
+        bottom: 200px; right: 350px;
+        z-index: -1;
+      }
+
+    }
+    .content{
+      text-align: center;
+      width: auto;
+      height: auto;
+      position: relative;
+      top: 50%; transform: translateY(-50%);
+      .text{
+        h1{
+          color: #926D49;
+          font-size: 40px;
+          font-weight: bold;
+          margin-bottom: 30px;
+        }
+        p{
+          line-height: 1.2;
+          font-size: 20px;
+          margin-bottom: 60px;
+          strong{
+            color: $Main-orange;
+          }
+        }
+      }
+      .video{
+        iframe{
+          border-radius: 10px;
+          width: 880px; height: 495px;
+          margin-bottom: 30px;
+        }
+        p{font-size: 20px; font-weight: bold;}
+      }
+    }
+  }
+  // 주요활동
+  .active{
+    background: #F3F2EE;
+    height: 1400px;
+    .active-inner{
+      height: auto;
+      position: relative;
+      top: 50%; transform: translateY(-50%);
+      h1{
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        color: #926D49;
+      }
+      .active-lists{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .each-list {
+          display: flex;
+          align-items: center;
+          background: #fff;
+          height: 180px;
+          border-radius: 100px;
+          padding: 15px 30px;
+          gap: 30px; 
+          .icon {
+            width: 320px;
+            height: 150px;
+            border-radius: 100px;
+            display: flex;
+            align-items: center; 
+            justify-content: center;
+            
+            &.color-bg01{ background-color: #FFF0F1;}
+            &.color-bg02{ background-color: #F3F0E6;}
+            &.color-bg03{ background-color: #F8F3D7;}
+            &.color-bg04{ background-color: #EEFFED;}
+            &.color-bg05{ background-color: #EFF1FF;}
+            .icon-content {
+              display: flex;
+              align-items: center;
+              gap: 15px;
+              width: auto;
+              .img {
+                img {}
+              }
+
+              .title {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                h3 {
+                  font-size: 30px;
+                  font-weight: bold;
+                  margin: 0;
+                }
+
+                p {
+                  font-size: 20px;
+                  font-weight: 300;
+                  color: #4C4C4C;
+                  margin: 5px 0 0;
+                }
+              }
+            }
+          }
+
+
+          .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h2 {
+              font-size: 20px;
+              font-weight: bold;
+              margin: 0;
+            }
+
+            p {
+              font-size: 20px;
+              color: #4C4C4C;
+              margin: 15px 0 0;
+            }
+          }
+        }
+
+      }
+    }
+  }
+  /* tab-content02  */
+  // 조직도
+  .organization-chart-inner {
+    margin: 100px auto;
+    h1 {
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #926D49;
+    }
+    .rotated-table {
+      display: flex;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 100%;
+      margin: 0 auto;
+
+      .thead {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 159, 85, 0.244);
+        border-right: 1px solid #ddd;
+        width: 150px;
+        div {
+          padding: 15px 10px;
+          margin-top: 3px;
+          font-weight: bold;
+          border-bottom: 1px solid #ddd;
+          text-align: center;
+          white-space: nowrap;
+
+          &.chairman {
+            height: 18px;
+          }
+          &.advisors {
+            height: 18px;
+          }
+          &.auditors {
+            height: 39px;
+          }
+          &.directors {
+            height: 38px;
+          }
+          &.staff {
+            height: 80px;
+          }
+        }
+      }
+      .tbody {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        div {
+          line-height: 1.3;
+          padding: 15px 30px;
+          border-bottom: 1px solid #eee;
+          display: flex;
+          align-items: center;
+          white-space: normal;  
+          flex-wrap: wrap;      
+        }
+      }
+    }
+  }
+  // 재정
+  .finances-inner {
+    margin-top: 80px;
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+      color: #926D49;
+      strong {
+        color: $Main-orange;
+      }
+    }
+    .donation {
+    &.domestic-business{
+      margin-top: 30px;
+      border: 1px solid transparent;
+    }
+    &.overseas-business{
+      margin-top: 30px; 
+      margin-bottom: 100px;
+      border: 1px solid transparent;
+    }
+      h3 {
+        text-align: center;
+        font-size: 30px;
+        margin: 30px auto 10px;
+      }
+      p {
+        text-align: end;
+      }
+      table {
+        width: 100%;
+        margin: 0 auto;
+        border-collapse: collapse;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        font-size: 18px;
+        background-color: #fff;
+        thead {
+          background-color: $Main-orange;
+          color: #fff;
+          tr {
+            th {
+              padding: 15px;
+              text-align: center;
+              font-weight: bold;
+              border: 1px solid #ddd;
+            }
+          }
+        }
+        tbody {
+          tr {
+            &:nth-child(even) {
+              background-color: #f9f9f9;
+            }
+
+            &:hover {
+              background-color: #fff4e6;
+            }
+
+            td {
+              padding: 15px;
+              text-align: center;
+              border: 1px solid #ddd;
+              color: #333;
+
+              &.none {
+                background: #dbdbdb;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+  /* .tab-content03  */
+  // 관련기관
+  .related-organizations-inner {
+    margin: 100px auto;
+    h1 {
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #926D49;
+    }
+
+    .organizations-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+
+      .organization {
+        width: 250px;
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 16px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        &.none{
+          box-shadow: none; border: none;
+          cursor: auto;
+          pointer-events: none;
+          &:hover{
+            transform: translateY(0);
+            box-shadow: none;
+          }
+        }
+        &:hover {
+          transform: translateY(-6px);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+        .logo{
+          height: 95px;
+          line-height: 95px;
+          img {
+            width: 100%;
+          }
+        }
+
+        h3 {
+          font-size: 20px;
+          font-weight: 700;
+          color: #333;
+          margin: 0 0 10px;
+          text-align: center;
+        }
+
+        p {
+          font-size: 15px;
+          color: #666;
+          line-height: 1.5;
+          text-align: center;
+          margin-bottom: 12px;
+          height: 150px;
+        }
+
+        span {
+          font-size: 12px;
+          color: $Main-orange;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  // 오시는 길
+  .directions-inner {
+    margin: 100px auto 100px auto;
+    h1 {
+      margin-bottom: 40px;
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      color: #926D49;
+    }
+
+    .directions-wrap {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      border: 1px solid #ddd;
+      border-radius: 16px;
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      padding: 30px;
+
+      .map {
+        flex: 1;
+
+        iframe {
+          width: 100%;
+          height: 350px;
+          border: none;
+          border-radius: 12px;
+        }
+      }
+
+      .address {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 20px;
+        h2{
+          font-size: 30px;
+          color: #333;
+          margin-bottom: 20px;
+          font-weight: 600;
+        }
+        h3 {
+          font-size: 20px;
+          color: #333;
+          margin-bottom: 20px;
+          font-weight: 600;
+        }
+
+        p {
+          font-size: 18px;
+          color: #555;
+          line-height: 1.6;
+        }
+
+        span {
+          display: inline-block;
+          margin-top: 20px;
+          font-size: 16px;
+          font-weight: bold;
+          color: #926D49;
+          background-color: #faf7f5;
+          padding: 15px;
+          line-height: 1.3;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+
+  /********** climate-change **********/
+  .short-title{
+    h1{
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 15px;
+      color: #926D49;
+    }
+    p{
+      text-align: center;
+      margin: auto;
+      line-height: 1.2;
+    }
+  }
+  /* tab-content02  */
+  // 기후변화란
+  .exposition-inner{
+    margin: 100px auto 50px;
+    p{
+      text-align: center;
+      margin: auto;
+      line-height: 1.2;
+    }
+    .IPCC{
+      box-shadow: 0 0 5px gray;
+      border-radius: 20px;
+      width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-size: 20px;
+      gap: 20px;
+      strong{
+        color: $Main-orange;
+        font-size: 30px;
+        line-height: 1.8;
+      }
+    }
+  }
+  .global-average-inner{
+    .card-wrap{
+      display: flex;
+      flex: 1;
+      gap: 30px;
+      .img-card{
+        width: 50%;
+        text-align: center;
+        .img-wrap{
+          height: 480px;
+          line-height: 480px;
+          img{
+            width: auto;
+            
+          }
+        }
+        p{
+  
+        }
+  
+      }
+    }
+  }
+
+  /* tab-content02  */
+  // 기후변화FAQ
+  .FAQ-inner {
+    margin: 100px auto;
+    padding: 0 20px;
+    h1 {
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 15px;
+      color: #926D49;
+    }
+    p {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+    .accordion {
+      .accordion-item {
+        border-bottom: 1px solid #ccc;
+        border-radius: 8px;
+        margin-bottom: 12px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        transition: background-color 0.3s ease;
+        &.active {
+          background: #F3F2EE;
+          height: auto;
+          .accordion-header::after {
+            transform: translateY(-50%) rotate(180deg);
+            color: #926D49;
+          }
+        }
+        .accordion-header {
+          background: none;
+          border: none;
+          width: 100%;
+          padding: 18px 40px 18px 18px;
+          font-size: 20px;
+          font-weight: 600;
+          text-align: left;
+          color: #333;
+          cursor: pointer;
+          position: relative;
+          outline: none;
+          user-select: none;
+          border-radius: 8px;
+
+          &::after {
+            content: '▼';
+            position: absolute;
+            right: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 16px;
+            transition: transform 0.3s ease, color 0.3s ease;
+            color: #999;
+          }
+
+          &:hover {
+            background-color: #f9f5f0;
+          }
+        }
+        .accordion-body {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s ease, padding 0.3s ease;
+          padding: 0 18px;
+          font-size: 17px;
+          line-height: 1.6;
+          color: #555;
+          border-radius: 0 0 8px 8px;
+          display: flex;
+          strong{margin-right: 10px;}
+          span{}
+        }
+        &.active .accordion-body {
+          max-height: 500px; 
+          padding: 12px 18px 30px 18px;  
+        }
+      }
+    }
+  }
+
+
+  /* tab-content03  */
+  // 더 알아보려면
+  .more-inner {
+    margin: 100px auto;
+    .background-circle{
+      .circle01{
+        rotate: 210deg;
+        position: absolute;
+        z-index: -1;
+        top: 800px; right: 200px;
+      }
+      .circle02{
+        position: absolute;
+        z-index: -1;
+        top: 1500px; left: 200px;
+      }
+      .circle03{
+        rotate: 180deg;
+        position: absolute;
+        z-index: 1;
+        top: 2250px; right: 0px;
+      }
+    }
+    h1 {
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 15px;
+      color: #926D49;
+    }
+    p{
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+    .more-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+
+      .website {
+        width: 375px;
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 16px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        &.none{
+          box-shadow: none; border: none;
+          cursor: auto;
+          pointer-events: none;
+          &:hover{
+            transform: translateY(0);
+            box-shadow: none;
+          }
+        }
+        &:hover {
+          transform: translateY(-6px);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+        .logo{
+          height: 150px;
+          line-height: 150px;
+          img {
+            width: 100%;
+          }
+        }
+
+        h3 {
+          font-size: 20px;
+          font-weight: 700;
+          color: #333;
+          margin: 0 0 10px;
+          text-align: center;
+        }
+
+        p {
+          font-size: 15px;
+          color: #666;
+          line-height: 1.5;
+          text-align: center;
+          margin-bottom: 12px;
+          height: 180px;
+        }
+
+        span {
+          font-size: 12px;
+          color: $Main-orange;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  /********** donate **********/
+  .regular-inner{
+    display: flex;
+    gap: 40px;
+    .select{
+      .regular-sponsorship{
+        flex: 7;
+        background: #fff;
+        box-shadow: 0 0 5px rgb(186, 186, 186);
+        border-radius: 10px;
+        padding-bottom: 30px;
+        h3{
+          font-size: 23px;
+          border-bottom: 1px solid #c0c0c0;
+          padding: 30px;
+        }
+        .field {
+          background: #fff;
+          border-radius: 16px;
+          padding: 20px 20px 0 20px;
+          margin: 0 auto;
+  
+          .short {
+            border-top: 1px solid #bcbcbc;
+            padding-top: 20px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            &.first-check{
+              border: none;
+            }
+            .check {
+              width: 28px;
+              height: 28px;
+              background-color: #fff;
+              color: #8e8e8e;
+              border: 1px solid #8e8e8e;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-right: 12px;
+              font-size: 18px;
+              transition: background-color 0.3s ease;
+            }
+  
+            .small-title {
+              h4 {
+                font-size: 20px;
+                font-weight: bold;
+                color: #333;
+                margin: 0;
+              }
+            }
+          }
+  
+          .detail {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0; 
+            margin-top: 0;
+            transition: all 0.3s ease;
+            display: flex;
+            gap: 12px;
+  
+            .easy-buttons {
+              display: flex;
+              gap: 12px;
+              
+              button {
+                flex: 1;
+                width: 150px; height: auto;
+                padding: 16px;
+                border: 1px solid #ccc;
+                border-radius: 12px;
+                background-color: #f9f9f9;
+                font-size: 16px;
+                cursor: pointer;
+                transition: all 0.2s ease;
+  
+                &:hover {
+                  border-color: $Main-orange;
+                  color: $Main-orange;
+                }
+  
+                &.active {
+                  background-color: $Main-orange;
+                  color: white;
+                  border-color: $Main-orange;
+                }
+              }
+            }
+  
+            .self-buttons {
+              position: relative;
+  
+              input {
+                box-sizing: border-box;
+                width: 150px; height: auto;
+                padding: 16px;
+                border: 1px solid #ccc;
+                border-radius: 12px;
+                font-size: 16px;
+              }
+  
+              .unit {
+                position: absolute;
+                right: 16px;
+                top: 50%; 
+                transform: translateY(-50%);
+                color: #888;
+                font-size: 16px;
+                pointer-events: none;
+              }
+            }
+          }
+  
+          &.open {
+            .detail {
+              max-height: 500px;
+              opacity: 1;
+              margin-top: 20px;
+            }
+  
+            .check {
+              background-color: $Main-orange; 
+              border-color: $Main-orange; 
+              color: $White;
+            }
+          }
+        }
+        .total{
+          width: 95%;
+          border-top: 1px solid #bcbcbc;
+          margin: 20px auto 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 30px 0;
+          box-sizing: border-box;
+          h4{font-size: 20px;}
+          h2{font-size: 24px;}
+        }
+        .next-btn{
+          display: block;
+          margin: auto;
+          width: 95%;
+          background: $Main-orange;
+          color: $White;
+          border-radius: 10px;
+          padding: 15px;
+          font-size: 24px;
+          font-weight: bold;
+          cursor: pointer;
+          transition: .3s;
+          &:hover{
+            background: $Hover-orange;
+          }
+        }
+      }
+      .agree{
+        margin-top: 15px;
+        background: #fff;
+        box-shadow: 0 0 5px rgb(186, 186, 186);
+        border-radius: 10px;
+        font-size: 25px;
+        border-bottom: 1px solid #c0c0c0;
+        padding: 30px;
+        &.payment{
+          margin-bottom: 100px;
+        }
+      }
+    }
+    .selection-details{
+      flex: 3;
+        position: sticky;
+        top: 200px; 
+        align-self: flex-start; 
+        z-index: 10; 
+      .selection-check{
+        background: #fff;
+        box-shadow: 0 0 5px rgb(186, 186, 186);
+        border-radius: 10px;
+        h4{
+          font-size: 23px;
+          border-bottom: 1px solid #c0c0c0;
+          padding: 30px;
+        }
+        .table-wrap{
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          padding: 30px;
+          div{
+            display: flex;
+            justify-content: space-between;
+            &.total-line{
+              border-top: 1px solid #d4d4d4;
+              padding-top: 20px;
+            }
+            p{
+              font-size: 18px;
+              display: flex;
+              align-items: center;
+              .badge{
+                font-size: 12px;
+                color: #fff;
+                background: $Main-orange;
+                border-radius: 50px;
+                padding: 5px 10px;
+                margin-top: -5px;
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+      }
+      .call{
+        margin-top: 15px;
+        background: #fff;
+        box-shadow: 0 0 5px rgb(186, 186, 186);
+        border-radius: 10px;
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        .contact{
+          font-size: 20px;
+          p{
+            margin-bottom: 10px;
+          }
+          h3{
+            font-weight: bold;
+            margin-top: 3px;
+          }
+        }
+        i{
+          margin-top: 5px;
+          font-size: 80px;
+          color: $Main-orange;
+        }
+      }
+    }
+  }
+}
+
+/********** 후원하기 **********/
+.donate-page{
+  background: #f5f5f5;
+  .header-simple-wrap{
+    background: #fff;
+    border-bottom: 1px solid #c8c8c8;
+    .header-simple{
+      width: 1535px;
+      margin: auto;
+      height: 90px;
+      line-height: 90px;
+    }
+  }
+}
