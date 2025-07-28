@@ -827,6 +827,9 @@ body {
 .banner.banner-bg02 {
   background: url(../images/subpageBanner02.png);
 }
+.banner.banner-bg03 {
+  background: url(../images/subpageBanner03.png);
+}
 .banner .banner-inner {
   color: #fff;
   height: auto;
@@ -891,25 +894,15 @@ body {
   /********** greeting **********/
   /* tab-content01  */
   /* tab-content02  */
-  /* .tab-content03  */
+  /* tab-content03  */
   /********** climate-change **********/
-  /* tab-content02  */
+  /* tab-content01  */
   /* tab-content02  */
   /* tab-content03  */
   /********** donate **********/
 }
 .tab-content.active {
   display: block;
-}
-.tab-content.greenhouse {
-  margin: 100px auto;
-  width: 1265px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 20px;
-  padding: 20px;
-  -webkit-box-shadow: 0 0 5px gray;
-          box-shadow: 0 0 5px gray;
 }
 .tab-content .detail-summary {
   background-color: #F5F5F5;
@@ -1461,7 +1454,7 @@ body {
   line-height: 1.2;
 }
 .tab-content .exposition-inner {
-  margin: 30px auto;
+  margin: 100px auto 50px;
 }
 .tab-content .exposition-inner p {
   text-align: center;
@@ -1469,7 +1462,6 @@ body {
   line-height: 1.2;
 }
 .tab-content .exposition-inner .IPCC {
-  background: rgb(255, 255, 237);
   -webkit-box-shadow: 0 0 5px gray;
           box-shadow: 0 0 5px gray;
   border-radius: 20px;
@@ -1511,36 +1503,6 @@ body {
 }
 .tab-content .global-average-inner .card-wrap .img-card .img-wrap img {
   width: auto;
-}
-.tab-content .global-average-inner .card-wrap .img-card p {
-  color: gray;
-  font-size: 14px;
-}
-.tab-content .global-average-inner p {
-  text-align: center;
-  margin: 20px auto;
-  line-height: 1.5;
-}
-.tab-content .greenhouse-gas-inner {
-  text-align: center;
-}
-.tab-content .greenhouse-gas-inner.reduce {
-  margin-bottom: 20px;
-}
-.tab-content .greenhouse-gas-inner h1 {
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 15px;
-  color: #926D49;
-}
-.tab-content .greenhouse-gas-inner p {
-  margin: 20px;
-  line-height: 1.5;
-}
-.tab-content .greenhouse-gas-inner p strong {
-  color: #FF6C11;
 }
 .tab-content .FAQ-inner {
   margin: 100px auto;
@@ -2034,6 +1996,69 @@ body {
   margin-top: 5px;
   font-size: 80px;
   color: #FF6C11;
+}
+.tab-content .tabel-inner {
+  margin: 50px auto;
+}
+.tab-content .tabel-inner h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 40px;
+  color: #926D49;
+  font-weight: bold;
+}
+.tab-content .tabel-inner table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+.tab-content .tabel-inner table th, .tab-content .tabel-inner table td {
+  text-align: left;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.tab-content .tabel-inner table th {
+  background: #FF6C11;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+.tab-content .tabel-inner table td {
+  font-size: 18px;
+  text-align: center;
+}
+.tab-content .tabel-inner a.pdf-link {
+  color: #4caf50;
+  text-decoration: none;
+}
+.tab-content .tabel-inner a.pdf-link:hover {
+  text-decoration: underline;
+}
+.tab-content .tabel-inner .pagination {
+  padding: 8px 12px;
+  text-align: center;
+  position: relative;
+  z-index: 1000;
+  top: -30px;
+}
+.tab-content .tabel-inner .pagination button {
+  background: rgba(255, 72, 0, 0.479);
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  margin: 0 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.tab-content .tabel-inner .pagination button.disabled {
+  background: #FF6C11;
+  cursor: default;
 }
 
 /********** 후원하기 **********/

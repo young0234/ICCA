@@ -1,5 +1,5 @@
 /* header */
-fetch('/ICCA/include/header.html')
+fetch('../include/header.html')
   .then(response => response.text())
   .then(data => {
     document.querySelector('.header-include').innerHTML = data;
@@ -162,10 +162,79 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+/* 페이지네이션 */
+const itemsPerPage = 15;
+
+// tbody.noticeBody 모두 가져오기
+const allTbodyList = document.querySelectorAll('tbody.noticeBody');
+
+allTbodyList.forEach((tbody, index) => {
+  let currentPage = 1;
+  const allRows = Array.from(tbody.querySelectorAll('tr'));
+  const pagination = document.querySelectorAll('.pagination')[index];
+
+  function showPage(page) {
+    const start = (page - 1) * itemsPerPage;
+    const end = start + itemsPerPage;
+    allRows.forEach((row, idx) => {
+      row.style.display = (idx >= start && idx < end) ? '' : 'none';
+    });
+  }
+
+  function renderPagination() {
+    pagination.innerHTML = '';
+    const totalPages = Math.ceil(allRows.length / itemsPerPage);
+
+    const prevBtn = document.createElement('button');
+    prevBtn.textContent = '이전';
+    prevBtn.disabled = currentPage === 1;
+    prevBtn.className = currentPage === 1 ? 'disabled' : '';
+    prevBtn.addEventListener('click', () => {
+      if (currentPage > 1) {
+        currentPage--;
+        update();
+      }
+    });
+    pagination.appendChild(prevBtn);
+
+    for (let i = 1; i <= totalPages; i++) {
+      const btn = document.createElement('button');
+      btn.textContent = i;
+      if (i === currentPage) {
+        btn.disabled = true;
+        btn.className = 'disabled';
+      }
+      btn.addEventListener('click', () => {
+        currentPage = i;
+        update();
+      });
+      pagination.appendChild(btn);
+    }
+
+    const nextBtn = document.createElement('button');
+    nextBtn.textContent = '다음';
+    nextBtn.disabled = currentPage === totalPages;
+    nextBtn.className = currentPage === totalPages ? 'disabled' : '';
+    nextBtn.addEventListener('click', () => {
+      if (currentPage < totalPages) {
+        currentPage++;
+        update();
+      }
+    });
+    pagination.appendChild(nextBtn);
+  }
+
+  function update() {
+    showPage(currentPage);
+    renderPagination();
+  }
+
+  update();
+});
 
 
 /* footer */
-fetch('/ICCA/include/footer.html')
+fetch('../include/footer.html')
   .then(response => response.text())
   .then(data => {
     document.querySelector('.footer-include').innerHTML = data;

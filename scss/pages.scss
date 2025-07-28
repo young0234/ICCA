@@ -57,6 +57,9 @@ body {
   &.banner-bg02{
     background: url(../images/subpageBanner02.png);
   }
+  &.banner-bg03{
+    background: url(../images/subpageBanner03.png);
+  }
   .banner-inner{
     color: #fff;
     height: auto;
@@ -108,14 +111,7 @@ body {
   &.active {
     display: block;
   }
-  &.greenhouse{
-    margin: 100px auto;
-    width: 1265px;
-    box-sizing: border-box;
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0 0 5px gray;
-  }
+
   /********** greeting **********/
   /* tab-content01  */
   // 인사말
@@ -440,7 +436,7 @@ body {
     }
 
   }
-  /* .tab-content03  */
+  /* tab-content03  */
   // 관련기관
   .related-organizations-inner {
     margin: 100px auto;
@@ -602,17 +598,16 @@ body {
       line-height: 1.2;
     }
   }
-  /* tab-content02  */
+  /* tab-content01  */
   // 기후변화란
   .exposition-inner{
-    margin: 30px auto;
+    margin: 100px auto 50px;
     p{
       text-align: center;
       margin: auto;
       line-height: 1.2;
     }
     .IPCC{
-      background: rgb(255, 255, 237);
       box-shadow: 0 0 5px gray;
       border-radius: 20px;
       width: 1000px;
@@ -647,36 +642,9 @@ body {
           }
         }
         p{
-          color: gray;
-          font-size: 14px;
+  
         }
   
-      }
-    }
-    p{
-      text-align: center;
-      margin: 20px auto;
-      line-height: 1.5;
-    }
-  }
-  .greenhouse-gas-inner{
-    &.reduce{
-      margin-bottom: 20px;
-    }
-    h1{
-      font-size: 40px;
-      font-weight: bold;
-      text-align: center;
-      margin-top: 50px;
-      margin-bottom: 15px;
-      color: #926D49;
-    }
-    text-align: center;
-    p{
-      margin: 20px;
-      line-height: 1.5;
-      strong{
-        color: $Main-orange;
       }
     }
   }
@@ -1107,6 +1075,77 @@ body {
         }
       }
     }
+  }
+
+  .tabel-inner{
+    margin: 50px auto;
+    
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 40px;
+      color: #926D49;
+      font-weight: bold;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 50px;
+      th, td {
+        text-align: left;
+        padding: 20px;
+        border-bottom: 1px solid #ddd;
+      }
+    
+      th {
+        background: $Main-orange;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+      }
+      td{
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+    
+    a.pdf-link {
+      color: #4caf50;
+      text-decoration: none;
+    
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    
+    .pagination {
+      padding: 8px 12px;
+      text-align: center;
+      position: relative;
+      z-index: 1000;
+      top: -30px;
+      button {
+        background: rgba(255, 72, 0, 0.479);
+        border: none;
+        color: white;
+        padding: 8px 14px;
+        margin: 0 4px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+    
+        &.disabled {
+          background: $Main-orange;
+          cursor: default;
+        }
+      }
+    }
+    
   }
 }
 
