@@ -1,5 +1,5 @@
 /* header */
-fetch('../include/header.html')
+fetch('/ICCA/include/header.html')
   .then(response => response.text())
   .then(data => {
     document.querySelector('.header-include').innerHTML = data;
@@ -12,8 +12,8 @@ fetch('../include/header.html')
     const asideLinks = document.querySelectorAll('.aside a');
     const line = document.querySelector('.aside .line');
 
-    const logoWhite = '../images/whiteLogo.png'; // 기본 흰색용 로고
-    const logoBlack = '../images/logo.png'; // 흰 배경용 검정 로고
+    const logoWhite = '/ICCA/images/whiteLogo.png'; // 기본 흰색용 로고
+    const logoBlack = '/ICCA/images/logo.png'; // 흰 배경용 검정 로고
 
     let isHoveringMenu = false;
     let isHoveringSubmenu = false;
@@ -469,7 +469,7 @@ btnPlayPause04.addEventListener("click", () => {
   
   
 /* footer */
-fetch('../include/footer.html')
+fetch('/ICCA/include/footer.html')
   .then(response => response.text())
   .then(data => {
     document.querySelector('.footer-include').innerHTML = data;
