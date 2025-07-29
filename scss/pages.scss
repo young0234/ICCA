@@ -604,13 +604,17 @@ body {
   /* tab-content01  */
   // 기후변화란
   .exposition-inner{
-    margin: 100px auto 50px;
+    margin: 100px auto 30px;
+    h1{
+      margin-top: 50px;
+    }
     p{
       text-align: center;
       margin: auto;
       line-height: 1.2;
     }
     .IPCC{
+      background: rgb(255, 255, 237);
       box-shadow: 0 0 5px gray;
       border-radius: 20px;
       width: 1000px;
@@ -645,9 +649,36 @@ body {
           }
         }
         p{
-  
+          color: gray;
+          font-size: 14px;
         }
   
+      }
+    }
+    p{
+      text-align: center;
+      margin: 20px auto;
+      line-height: 1.5;
+    }
+  }
+  .greenhouse-gas-inner{
+    &.reduce{
+      margin-bottom: 20px;
+    }
+    h1{
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 15px;
+      color: #926D49;
+    }
+    text-align: center;
+    p{
+      margin: 20px;
+      line-height: 1.5;
+      strong{
+        color: $Main-orange;
       }
     }
   }
