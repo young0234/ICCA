@@ -96,10 +96,14 @@ document.querySelectorAll('.accordion-header').forEach(header => {
   });
 });
 
-
+/* 뉴스레터 더보기 */
 document.addEventListener('DOMContentLoaded', function() {
   const loadMoreBtn = document.getElementById('load-more-btn');
   const hiddenCards = document.querySelectorAll('.newsletter-card.hidden-cards');
+
+  hiddenCards.forEach(card => {
+    card.style.display = 'none'; // 초기 상태에서 숨기기
+  });
   
   if (loadMoreBtn && hiddenCards.length > 0) {
     loadMoreBtn.addEventListener('click', function() {

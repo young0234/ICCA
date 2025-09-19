@@ -1891,7 +1891,6 @@ body {
 /* 뉴스레터 섹션 */
 .newsletter-section {
   padding: 80px 0;
-  background: #f8f9fa;
 }
 
 .newsletter-inner {
@@ -1913,7 +1912,7 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  & .hidden-cards{display: none;}
+  &.hidden-cards{display: none;}
   &:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
@@ -1930,27 +1929,27 @@ body {
     color: #fff;
     background: $Main-orange;
     
-    &.최신호 {
+    &.new {
       background: $Main-orange;
     }
     
-    &.인기 {
+    &.famous {
       background: #28a745;
     }
     
-    &.특집 {
+    &.special {
       background: #926D49;
     }
     
-    &.교육 {
+    &.education {
       background: #17a2b8;
     }
     
-    &.정책 {
+    &.policy {
       background: #6f42c1;
     }
     
-    &.연구 {
+    &.search {
       background: #fd7e14;
     }
   }
@@ -1959,6 +1958,10 @@ body {
     h3 {
       font-size: 18px;
       margin-bottom: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      min-width: 0; // flex 자식일 때 안전하게
     }
     
     p {
@@ -1973,7 +1976,6 @@ body {
   }
   
   .card-meta {
-    flex-direction: column;
     gap: 8px;
     margin-bottom: 12px;
     
@@ -2083,6 +2085,7 @@ body {
     h3 {
       font-size: 18px;
       margin-bottom: 12px;
+      
     }
     
     p {
@@ -2184,19 +2187,7 @@ body {
     font-weight: bold;
     color: #fff;
     background: #926D49;
-    
-    &.2024 {
-      background: $Main-orange;
-    }
-    
-    &.2023 {
-      background: #28a745;
-    }
-    
-    &.2022 {
-      background: #17a2b8;
-    }
-    
+
     &.보고서 {
       background: #6f42c1;
     }

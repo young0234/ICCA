@@ -1818,21 +1818,6 @@ body {
   cursor: default;
 }
 
-/********** 후원하기 **********/
-.donate-page {
-  background: #f5f5f5;
-}
-.donate-page .header-simple-wrap {
-  background: #fff;
-  border-bottom: 1px solid #c8c8c8;
-}
-.donate-page .header-simple-wrap .header-simple {
-  width: 1535px;
-  margin: auto;
-  height: 90px;
-  line-height: 90px;
-}
-
 /********** 세미나 · 캠페인 **********/
 /* 세미나 섹션 */
 .seminar-section {
@@ -1850,14 +1835,12 @@ body {
   text-align: center;
   margin-bottom: 60px;
 }
-
 .section-title h2 {
   font-size: 40px;
   font-weight: bold;
   color: #926D49;
   margin-bottom: 20px;
 }
-
 .section-title p {
   font-size: 18px;
   color: #666;
@@ -1880,7 +1863,6 @@ body {
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .seminar-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
@@ -1891,11 +1873,11 @@ body {
   height: 200px;
   overflow: hidden;
 }
-
 .card-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: transform 0.3s ease;
 }
 
@@ -1914,11 +1896,9 @@ body {
   color: #fff;
   background: #FF6C11;
 }
-
 .card-badge.upcoming {
   background: #926D49;
 }
-
 .card-badge.completed {
   background: #28a745;
 }
@@ -1934,7 +1914,6 @@ body {
   font-size: 14px;
   color: #666;
 }
-
 .card-meta span {
   display: flex;
 }
@@ -1946,7 +1925,6 @@ body {
   margin-bottom: 15px;
   line-height: 1.4;
 }
-
 .card-content p {
   font-size: 15px;
   color: #666;
@@ -1984,7 +1962,6 @@ body {
   font-weight: 500;
   transition: color 0.3s ease;
 }
-
 .btn-detail:hover {
   color: #f83a00;
 }
@@ -2016,17 +1993,14 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid #f0f0f0;
 }
-
 .campaign-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
-
 .campaign-card .card-content h3 {
   font-size: 18px;
   margin-bottom: 12px;
 }
-
 .campaign-card .card-content p {
   font-size: 14px;
   margin-bottom: 20px;
@@ -2036,22 +2010,17 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .campaign-card .card-meta {
-  flex-direction: column;
   gap: 8px;
   margin-bottom: 12px;
 }
-
 .campaign-card .card-meta span {
   font-size: 13px;
 }
-
 .campaign-card .card-meta .participants {
   color: #FF6C11;
   font-weight: 500;
 }
-
 .campaign-card .card-footer {
   flex-direction: column;
   gap: 15px;
@@ -2097,7 +2066,6 @@ body {
   font-weight: 500;
   transition: all 0.3s ease;
 }
-
 .btn-more:hover {
   background: #7a5a3a;
   transform: translateY(-2px);
@@ -2112,60 +2080,48 @@ body {
     max-width: 1200px;
   }
 }
-
 @media (max-width: 1024px) {
   .seminar-grid,
   .campaign-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
   }
-  
   .section-title h2 {
     font-size: 32px;
   }
-  
   .section-title p {
     font-size: 16px;
   }
 }
-
 @media (max-width: 768px) {
   .seminar-section,
   .campaign-section {
     padding: 60px 0;
   }
-  
   .seminar-inner,
   .campaign-inner {
     padding: 0 15px;
   }
-  
   .seminar-grid,
   .campaign-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
   .section-title {
     margin-bottom: 40px;
   }
-  
   .section-title h2 {
     font-size: 28px;
   }
-  
   .section-title p {
     font-size: 15px;
   }
-  
   .card-content {
     padding: 20px;
   }
-  
   .card-content h3 {
     font-size: 18px;
   }
-  
   .card-content p {
     font-size: 14px;
     display: -webkit-box;
@@ -2174,45 +2130,36 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  
   .card-footer {
     flex-direction: column;
     gap: 15px;
     align-items: flex-start;
   }
-  
   .btn-more {
     padding: 12px 25px;
     font-size: 14px;
   }
 }
-
 @media (max-width: 480px) {
   .seminar-section,
   .campaign-section {
     padding: 40px 0;
   }
-  
   .section-title h2 {
     font-size: 24px;
   }
-  
   .section-title p {
     font-size: 14px;
   }
-  
   .card-image {
     height: 180px;
   }
-  
   .card-content {
     padding: 15px;
   }
-  
   .card-content h3 {
     font-size: 16px;
   }
-  
   .card-content p {
     font-size: 13px;
     display: -webkit-box;
@@ -2221,17 +2168,14 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  
   .card-meta {
     flex-direction: column;
     gap: 8px;
   }
-  
   .card-meta span {
     font-size: 12px;
   }
 }
-
 /********** 자료집 · 단행본 **********/
 /* 자료집 섹션 */
 .publication-section {
@@ -2259,12 +2203,10 @@ body {
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .publication-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
-
 .publication-card .card-badge {
   position: absolute;
   top: 15px;
@@ -2276,16 +2218,13 @@ body {
   color: #fff;
   background: #FF6C11;
 }
-
 .publication-card .card-badge:not(.최신):not(.인기):not(.연구):not(.실무):not(.데이터):not(.정책) {
   background: #926D49;
 }
-
 .publication-card .card-content h3 {
   font-size: 18px;
   margin-bottom: 12px;
 }
-
 .publication-card .card-content p {
   font-size: 14px;
   margin-bottom: 20px;
@@ -2295,22 +2234,18 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .publication-card .card-meta {
   flex-direction: column;
   gap: 8px;
   margin-bottom: 12px;
 }
-
 .publication-card .card-meta span {
   font-size: 13px;
 }
-
 .publication-card .card-meta .type {
   color: #FF6C11;
   font-weight: 500;
 }
-
 .publication-card .card-footer {
   flex-direction: column;
   gap: 15px;
@@ -2364,12 +2299,10 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid #f0f0f0;
 }
-
 .book-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
-
 .book-card .card-badge {
   position: absolute;
   top: 15px;
@@ -2381,20 +2314,16 @@ body {
   color: #fff;
   background: #926D49;
 }
-
 .book-card .card-badge.신간 {
   background: #FF6C11;
 }
-
 .book-card .card-badge.베스트 {
   background: #28a745;
 }
-
 .book-card .card-content h3 {
   font-size: 18px;
   margin-bottom: 12px;
 }
-
 .book-card .card-content p {
   font-size: 14px;
   margin-bottom: 20px;
@@ -2404,22 +2333,18 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .book-card .card-meta {
   flex-direction: column;
   gap: 8px;
   margin-bottom: 12px;
 }
-
 .book-card .card-meta span {
   font-size: 13px;
 }
-
 .book-card .card-meta .author {
   color: #926D49;
   font-weight: 500;
 }
-
 .book-card .card-footer {
   flex-direction: column;
   gap: 15px;
@@ -2450,7 +2375,6 @@ body {
     max-width: 1200px;
   }
 }
-
 @media (max-width: 1024px) {
   .publication-grid,
   .book-grid {
@@ -2458,29 +2382,24 @@ body {
     gap: 25px;
   }
 }
-
 @media (max-width: 768px) {
   .publication-section,
   .book-section {
     padding: 60px 0;
   }
-  
   .publication-inner,
   .book-inner {
     padding: 0 15px;
   }
-  
   .publication-grid,
   .book-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
   .publication-card .card-content h3,
   .book-card .card-content h3 {
     font-size: 16px;
   }
-  
   .publication-card .card-content p,
   .book-card .card-content p {
     font-size: 13px;
@@ -2490,7 +2409,6 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  
   .file-info,
   .book-info {
     flex-direction: column;
@@ -2498,23 +2416,19 @@ body {
     align-items: flex-start;
   }
 }
-
 @media (max-width: 480px) {
   .publication-section,
   .book-section {
     padding: 40px 0;
   }
-  
   .publication-card .card-content,
   .book-card .card-content {
     padding: 15px;
   }
-  
   .publication-card .card-content h3,
   .book-card .card-content h3 {
     font-size: 15px;
   }
-  
   .publication-card .card-content p,
   .book-card .card-content p {
     font-size: 12px;
@@ -2525,12 +2439,10 @@ body {
     text-overflow: ellipsis;
   }
 }
-
 /********** 뉴스레터 · 보고서 · 아카이브 **********/
 /* 뉴스레터 섹션 */
 .newsletter-section {
   padding: 80px 0;
-  background: #f8f9fa;
 }
 
 .newsletter-inner {
@@ -2553,12 +2465,13 @@ body {
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.newsletter-card.hidden-cards {
+  display: none;
+}
 .newsletter-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
-
 .newsletter-card .card-badge {
   position: absolute;
   top: 15px;
@@ -2570,36 +2483,32 @@ body {
   color: #fff;
   background: #FF6C11;
 }
-
-.newsletter-card .card-badge.최신호 {
+.newsletter-card .card-badge.new {
   background: #FF6C11;
 }
-
-.newsletter-card .card-badge.인기 {
+.newsletter-card .card-badge.famous {
   background: #28a745;
 }
-
-.newsletter-card .card-badge.특집 {
+.newsletter-card .card-badge.special {
   background: #926D49;
 }
-
-.newsletter-card .card-badge.교육 {
+.newsletter-card .card-badge.education {
   background: #17a2b8;
 }
-
-.newsletter-card .card-badge.정책 {
+.newsletter-card .card-badge.policy {
   background: #6f42c1;
 }
-
-.newsletter-card .card-badge.연구 {
+.newsletter-card .card-badge.search {
   background: #fd7e14;
 }
-
 .newsletter-card .card-content h3 {
   font-size: 18px;
   margin-bottom: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
 }
-
 .newsletter-card .card-content p {
   font-size: 14px;
   margin-bottom: 20px;
@@ -2609,22 +2518,17 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .newsletter-card .card-meta {
-  flex-direction: column;
   gap: 8px;
   margin-bottom: 12px;
 }
-
 .newsletter-card .card-meta span {
   font-size: 13px;
 }
-
 .newsletter-card .card-meta .issue {
   color: #FF6C11;
   font-weight: 500;
 }
-
 .newsletter-card .card-footer {
   display: flex;
   justify-content: space-between;
@@ -2637,12 +2541,10 @@ body {
   gap: 15px;
   align-items: center;
 }
-
 .newsletter-info .pages {
   color: #666;
   font-size: 12px;
 }
-
 .newsletter-info .read-time {
   color: #999;
   font-size: 12px;
@@ -2675,12 +2577,10 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid #f0f0f0;
 }
-
 .report-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
-
 .report-card .card-badge {
   position: absolute;
   top: 15px;
@@ -2692,36 +2592,28 @@ body {
   color: #fff;
   background: #926D49;
 }
-
 .report-card .card-badge.최신 {
   background: #FF6C11;
 }
-
 .report-card .card-badge.연구 {
   background: #28a745;
 }
-
 .report-card .card-badge.기술 {
   background: #17a2b8;
 }
-
 .report-card .card-badge.교육 {
   background: #6f42c1;
 }
-
 .report-card .card-badge.시민 {
   background: #fd7e14;
 }
-
 .report-card .card-badge.데이터 {
   background: #20c997;
 }
-
 .report-card .card-content h3 {
   font-size: 18px;
   margin-bottom: 12px;
 }
-
 .report-card .card-content p {
   font-size: 14px;
   margin-bottom: 20px;
@@ -2731,22 +2623,18 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .report-card .card-meta {
   flex-direction: column;
   gap: 8px;
   margin-bottom: 12px;
 }
-
 .report-card .card-meta span {
   font-size: 13px;
 }
-
 .report-card .card-meta .category {
   color: #FF6C11;
   font-weight: 500;
 }
-
 .report-card .card-footer {
   flex-direction: column;
   gap: 15px;
@@ -2758,7 +2646,6 @@ body {
   gap: 15px;
   align-items: center;
 }
-
 .report-info .file-type {
   background: #f0f0f0;
   color: #666;
@@ -2767,12 +2654,10 @@ body {
   font-size: 12px;
   font-weight: bold;
 }
-
 .report-info .file-size {
   color: #999;
   font-size: 12px;
 }
-
 .report-info .pages {
   color: #666;
   font-size: 12px;
@@ -2804,12 +2689,10 @@ body {
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .archive-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
-
 .archive-card .card-badge {
   position: absolute;
   top: 15px;
@@ -2821,36 +2704,19 @@ body {
   color: #fff;
   background: #926D49;
 }
-
-.archive-card .card-badge.2024 {
-  background: #FF6C11;
-}
-
-.archive-card .card-badge.2023 {
-  background: #28a745;
-}
-
-.archive-card .card-badge.2022 {
-  background: #17a2b8;
-}
-
 .archive-card .card-badge.보고서 {
   background: #6f42c1;
 }
-
 .archive-card .card-badge.특별호 {
   background: #fd7e14;
 }
-
 .archive-card .card-badge.전체 {
   background: #20c997;
 }
-
 .archive-card .card-content h3 {
   font-size: 18px;
   margin-bottom: 12px;
 }
-
 .archive-card .card-content p {
   font-size: 14px;
   margin-bottom: 20px;
@@ -2860,26 +2726,21 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .archive-card .card-meta {
   flex-direction: column;
   gap: 8px;
   margin-bottom: 12px;
 }
-
 .archive-card .card-meta span {
   font-size: 13px;
 }
-
 .archive-card .card-meta .year {
   color: #FF6C11;
   font-weight: 500;
 }
-
 .archive-card .card-meta .count {
   color: #666;
 }
-
 .archive-card .card-footer {
   flex-direction: column;
   gap: 15px;
@@ -2891,12 +2752,10 @@ body {
   gap: 15px;
   align-items: center;
 }
-
 .archive-info .total-pages {
   color: #666;
   font-size: 12px;
 }
-
 .archive-info .topics {
   color: #999;
   font-size: 12px;
@@ -2911,7 +2770,6 @@ body {
     max-width: 1200px;
   }
 }
-
 @media (max-width: 1024px) {
   .newsletter-grid,
   .report-grid,
@@ -2920,33 +2778,28 @@ body {
     gap: 25px;
   }
 }
-
 @media (max-width: 768px) {
   .newsletter-section,
   .report-section,
   .archive-section {
     padding: 60px 0;
   }
-  
   .newsletter-inner,
   .report-inner,
   .archive-inner {
     padding: 0 15px;
   }
-  
   .newsletter-grid,
   .report-grid,
   .archive-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
   .newsletter-card .card-content h3,
   .report-card .card-content h3,
   .archive-card .card-content h3 {
     font-size: 16px;
   }
-  
   .newsletter-card .card-content p,
   .report-card .card-content p,
   .archive-card .card-content p {
@@ -2957,7 +2810,6 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  
   .newsletter-info,
   .report-info,
   .archive-info {
@@ -2966,26 +2818,22 @@ body {
     align-items: flex-start;
   }
 }
-
 @media (max-width: 480px) {
   .newsletter-section,
   .report-section,
   .archive-section {
     padding: 40px 0;
   }
-  
   .newsletter-card .card-content,
   .report-card .card-content,
   .archive-card .card-content {
     padding: 15px;
   }
-  
   .newsletter-card .card-content h3,
   .report-card .card-content h3,
   .archive-card .card-content h3 {
     font-size: 15px;
   }
-  
   .newsletter-card .card-content p,
   .report-card .card-content p,
   .archive-card .card-content p {
@@ -2996,4 +2844,18 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
   }
+}
+/********** 후원하기 **********/
+.donate-page {
+  background: #f5f5f5;
+}
+.donate-page .header-simple-wrap {
+  background: #fff;
+  border-bottom: 1px solid #c8c8c8;
+}
+.donate-page .header-simple-wrap .header-simple {
+  width: 1535px;
+  margin: auto;
+  height: 90px;
+  line-height: 90px;
 }
