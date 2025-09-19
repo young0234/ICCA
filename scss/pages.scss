@@ -1183,6 +1183,1188 @@ body {
   }
 }
 
+/********** 세미나 · 캠페인 **********/
+/* 세미나 섹션 */
+.seminar-section {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.seminar-inner {
+  width: 1265px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+  
+  h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #926D49;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.seminar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.seminar-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.card-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+}
+
+.seminar-card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.card-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  background: $Main-orange;
+  
+  &.upcoming {
+    background: #926D49;
+  }
+  
+  &.completed {
+    background: #28a745;
+  }
+}
+
+.card-content {
+  padding: 25px;
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #666;
+  
+  span {
+    display: flex;
+  }
+}
+
+.card-content {
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+  
+  p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  gap: 10px;
+}
+
+.speaker {
+  font-size: 14px;
+  color: #926D49;
+  font-weight: 500;
+}
+
+.btn-detail {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: $Main-orange;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  
+  &:hover {
+    color: $Hover-orange;
+  }
+}
+
+/* 캠페인 섹션 */
+.campaign-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.campaign-inner {
+  width: 1265px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.campaign-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.campaign-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #f0f0f0;
+  
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-content {
+    h3 {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+    
+    p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  
+  .card-meta {
+    gap: 8px;
+    margin-bottom: 12px;
+    
+    span {
+      font-size: 13px;
+    }
+    
+    .participants {
+      color: $Main-orange;
+      font-weight: 500;
+    }
+  }
+  
+  .card-footer {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #f0f0f0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, $Main-orange, $Hover-orange);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-size: 13px;
+  color: #666;
+  font-weight: 500;
+}
+
+/* 더보기 버튼 */
+.section-more {
+  text-align: center;
+}
+
+.btn-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 15px 30px;
+  background: #926D49;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background: #7a5a3a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(146, 109, 73, 0.3);
+  }
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1400px) {
+  .seminar-inner,
+  .campaign-inner {
+    width: 95%;
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .seminar-grid,
+  .campaign-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+  
+  .section-title {
+    h2 {
+      font-size: 32px;
+    }
+    
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .seminar-section,
+  .campaign-section {
+    padding: 60px 0;
+  }
+  
+  .seminar-inner,
+  .campaign-inner {
+    padding: 0 15px;
+  }
+  
+  .seminar-grid,
+  .campaign-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .section-title {
+    margin-bottom: 40px;
+    
+    h2 {
+      font-size: 28px;
+    }
+    
+    p {
+      font-size: 15px;
+    }
+  }
+  
+  .card-content {
+    padding: 20px;
+    
+    h3 {
+      font-size: 18px;
+    }
+    
+    p {
+      font-size: 14px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  
+  .card-footer {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  
+  .btn-more {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .seminar-section,
+  .campaign-section {
+    padding: 40px 0;
+  }
+  
+  .section-title {
+    h2 {
+      font-size: 24px;
+    }
+    
+    p {
+      font-size: 14px;
+    }
+  }
+  
+  .card-image {
+    height: 180px;
+  }
+  
+  .card-content {
+    padding: 15px;
+    
+    h3 {
+      font-size: 16px;
+    }
+    
+    p {
+      font-size: 13px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  
+  .card-meta {
+    flex-direction: column;
+    gap: 8px;
+    
+    span {
+      font-size: 12px;
+    }
+  }
+}
+
+/********** 자료집 · 단행본 **********/
+/* 자료집 섹션 */
+.publication-section {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.publication-inner {
+  width: 1265px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.publication-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.publication-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background: $Main-orange;
+    
+    &:not(.최신):not(.인기):not(.연구):not(.실무):not(.데이터):not(.정책) {
+      background: #926D49;
+    }
+  }
+  
+  .card-content {
+    h3 {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+    
+    p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  
+  .card-meta {
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 12px;
+    
+    span {
+      font-size: 13px;
+    }
+    
+    .type {
+      color: $Main-orange;
+      font-weight: 500;
+    }
+  }
+  
+  .card-footer {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+}
+
+.file-info {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.file-type {
+  background: #f0f0f0;
+  color: #666;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.file-size {
+  color: #999;
+  font-size: 12px;
+}
+
+/* 단행본 섹션 */
+.book-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.book-inner {
+  width: 1265px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.book-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #f0f0f0;
+  
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background: #926D49;
+    
+    &.신간 {
+      background: $Main-orange;
+    }
+    
+    &.베스트 {
+      background: #28a745;
+    }
+  }
+  
+  .card-content {
+    h3 {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+    
+    p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  
+  .card-meta {
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 12px;
+    
+    span {
+      font-size: 13px;
+    }
+    
+    .author {
+      color: #926D49;
+      font-weight: 500;
+    }
+  }
+  
+  .card-footer {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+}
+
+.book-info {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.publisher {
+  color: #666;
+  font-size: 12px;
+}
+
+.pages {
+  color: #999;
+  font-size: 12px;
+}
+
+/* 자료집/단행본 반응형 디자인 */
+@media (max-width: 1400px) {
+  .publication-inner,
+  .book-inner {
+    width: 95%;
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .publication-grid,
+  .book-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .publication-section,
+  .book-section {
+    padding: 60px 0;
+  }
+  
+  .publication-inner,
+  .book-inner {
+    padding: 0 15px;
+  }
+  
+  .publication-grid,
+  .book-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .publication-card .card-content h3,
+  .book-card .card-content h3 {
+    font-size: 16px;
+  }
+  
+  .publication-card .card-content p,
+  .book-card .card-content p {
+    font-size: 13px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .file-info,
+  .book-info {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .publication-section,
+  .book-section {
+    padding: 40px 0;
+  }
+  
+  .publication-card .card-content,
+  .book-card .card-content {
+    padding: 15px;
+  }
+  
+  .publication-card .card-content h3,
+  .book-card .card-content h3 {
+    font-size: 15px;
+  }
+  
+  .publication-card .card-content p,
+  .book-card .card-content p {
+    font-size: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/********** 뉴스레터 · 보고서 · 아카이브 **********/
+/* 뉴스레터 섹션 */
+.newsletter-section {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.newsletter-inner {
+  width: 1265px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.newsletter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.newsletter-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  & .hidden-cards{display: none;}
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background: $Main-orange;
+    
+    &.최신호 {
+      background: $Main-orange;
+    }
+    
+    &.인기 {
+      background: #28a745;
+    }
+    
+    &.특집 {
+      background: #926D49;
+    }
+    
+    &.교육 {
+      background: #17a2b8;
+    }
+    
+    &.정책 {
+      background: #6f42c1;
+    }
+    
+    &.연구 {
+      background: #fd7e14;
+    }
+  }
+  
+  .card-content {
+    h3 {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+    
+    p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  
+  .card-meta {
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 12px;
+    
+    span {
+      font-size: 13px;
+    }
+    
+    .issue {
+      color: $Main-orange;
+      font-weight: 500;
+    }
+  }
+  
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.newsletter-info {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  
+  .pages {
+    color: #666;
+    font-size: 12px;
+  }
+  
+  .read-time {
+    color: #999;
+    font-size: 12px;
+  }
+}
+
+/* 보고서 섹션 */
+.report-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.report-inner {
+  width: 1265px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.report-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.report-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #f0f0f0;
+  
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background: #926D49;
+    
+    &.최신 {
+      background: $Main-orange;
+    }
+    
+    &.연구 {
+      background: #28a745;
+    }
+    
+    &.기술 {
+      background: #17a2b8;
+    }
+    
+    &.교육 {
+      background: #6f42c1;
+    }
+    
+    &.시민 {
+      background: #fd7e14;
+    }
+    
+    &.데이터 {
+      background: #20c997;
+    }
+  }
+  
+  .card-content {
+    h3 {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+    
+    p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  
+  .card-meta {
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 12px;
+    
+    span {
+      font-size: 13px;
+    }
+    
+    .category {
+      color: $Main-orange;
+      font-weight: 500;
+    }
+  }
+  
+  .card-footer {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+}
+
+.report-info {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  
+  .file-type {
+    background: #f0f0f0;
+    color: #666;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .file-size {
+    color: #999;
+    font-size: 12px;
+  }
+  
+  .pages {
+    color: #666;
+    font-size: 12px;
+  }
+}
+
+/* 아카이브 섹션 */
+.archive-section {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.archive-inner {
+  width: 1265px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.archive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.archive-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background: #926D49;
+    
+    &.2024 {
+      background: $Main-orange;
+    }
+    
+    &.2023 {
+      background: #28a745;
+    }
+    
+    &.2022 {
+      background: #17a2b8;
+    }
+    
+    &.보고서 {
+      background: #6f42c1;
+    }
+    
+    &.특별호 {
+      background: #fd7e14;
+    }
+    
+    &.전체 {
+      background: #20c997;
+    }
+  }
+  
+  .card-content {
+    h3 {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+    
+    p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  
+  .card-meta {
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 12px;
+    
+    span {
+      font-size: 13px;
+    }
+    
+    .year {
+      color: $Main-orange;
+      font-weight: 500;
+    }
+    
+    .count {
+      color: #666;
+    }
+  }
+  
+  .card-footer {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+}
+
+.archive-info {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  
+  .total-pages {
+    color: #666;
+    font-size: 12px;
+  }
+  
+  .topics {
+    color: #999;
+    font-size: 12px;
+  }
+}
+
+/* 뉴스레터/보고서/아카이브 반응형 디자인 */
+@media (max-width: 1400px) {
+  .newsletter-inner,
+  .report-inner,
+  .archive-inner {
+    width: 95%;
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .newsletter-grid,
+  .report-grid,
+  .archive-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .newsletter-section,
+  .report-section,
+  .archive-section {
+    padding: 60px 0;
+  }
+  
+  .newsletter-inner,
+  .report-inner,
+  .archive-inner {
+    padding: 0 15px;
+  }
+  
+  .newsletter-grid,
+  .report-grid,
+  .archive-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .newsletter-card .card-content h3,
+  .report-card .card-content h3,
+  .archive-card .card-content h3 {
+    font-size: 16px;
+  }
+  
+  .newsletter-card .card-content p,
+  .report-card .card-content p,
+  .archive-card .card-content p {
+    font-size: 13px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .newsletter-info,
+  .report-info,
+  .archive-info {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletter-section,
+  .report-section,
+  .archive-section {
+    padding: 40px 0;
+  }
+  
+  .newsletter-card .card-content,
+  .report-card .card-content,
+  .archive-card .card-content {
+    padding: 15px;
+  }
+  
+  .newsletter-card .card-content h3,
+  .report-card .card-content h3,
+  .archive-card .card-content h3 {
+    font-size: 15px;
+  }
+  
+  .newsletter-card .card-content p,
+  .report-card .card-content p,
+  .archive-card .card-content p {
+    font-size: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
 /********** 후원하기 **********/
 .donate-page{
   background: #f5f5f5;

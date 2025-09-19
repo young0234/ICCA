@@ -97,6 +97,23 @@ document.querySelectorAll('.accordion-header').forEach(header => {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  const loadMoreBtn = document.getElementById('load-more-btn');
+  const hiddenCards = document.querySelectorAll('.newsletter-card.hidden-cards');
+  
+  if (loadMoreBtn && hiddenCards.length > 0) {
+    loadMoreBtn.addEventListener('click', function() {
+      // 숨겨진 카드들을 보여주기
+      hiddenCards.forEach(card => {
+        card.classList.remove('hidden-cards');
+        card.style.display = 'block';
+      });
+      
+      // 버튼 숨기기 (모든 카드를 다 보여줬으므로)
+      loadMoreBtn.style.display = 'none';
+    });
+  }
+});
 
 
 
