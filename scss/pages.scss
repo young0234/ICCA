@@ -2025,12 +2025,23 @@ body {
   padding: 0 20px;
 }
 
+.year-report{
+  margin-bottom: 50px;
+  h3{
+    color: $Main-orange;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+}
+
 .report-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-bottom: 60px;
+  grid-template-columns: repeat(auto-fill, 240px);
+  gap: 15px;
+  justify-content: start; 
 }
+
 
 .report-card {
   background: #fff;
@@ -2044,7 +2055,18 @@ body {
     transform: translateY(-8px);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
   }
-  
+  .card-image {
+    width: 240px;
+    height: 340px;
+    overflow: hidden; 
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; 
+      display: block; 
+    }
+  }
   .card-badge {
     position: absolute;
     top: 15px;
@@ -2082,10 +2104,13 @@ body {
   }
   
   .card-content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column-reverse;
     h3 {
-      font-size: 18px;
-      margin-bottom: 12px;
-      
+      font-size: 14px;
+      margin-bottom: 0px;
+      margin-top: 8px;
     }
     
     p {
@@ -2098,26 +2123,14 @@ body {
       text-overflow: ellipsis;
     }
   }
-  
-  .card-meta {
-    flex-direction: column;
-    gap: 8px;
-    margin-bottom: 12px;
-    
-    span {
-      font-size: 13px;
-    }
-    
-    .category {
-      color: $Main-orange;
-      font-weight: 500;
-    }
-  }
-  
   .card-footer {
+    border-top: none;
+    border-bottom: 1px solid #eee;
     flex-direction: column;
     gap: 15px;
     align-items: flex-start;
+    padding-top: 0px;
+    padding-bottom: 8px;
   }
 }
 
@@ -2125,6 +2138,7 @@ body {
   display: flex;
   gap: 15px;
   align-items: center;
+  width: 100%;
   
   .file-type {
     background: #f0f0f0;
@@ -2134,15 +2148,14 @@ body {
     font-size: 12px;
     font-weight: bold;
   }
-  
-  .file-size {
-    color: #999;
-    font-size: 12px;
-  }
-  
+
   .pages {
     color: #666;
     font-size: 12px;
+  }
+
+  .btn-detail{
+    margin-left: auto;
   }
 }
 

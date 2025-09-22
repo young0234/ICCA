@@ -2562,11 +2562,21 @@ body {
   padding: 0 20px;
 }
 
+.year-report {
+  margin-bottom: 50px;
+}
+.year-report h3 {
+  color: #FF6C11;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
 .report-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-bottom: 60px;
+  grid-template-columns: repeat(auto-fill, 240px);
+  gap: 15px;
+  justify-content: start;
 }
 
 .report-card {
@@ -2580,6 +2590,18 @@ body {
 .report-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+.report-card .card-image {
+  width: 240px;
+  height: 340px;
+  overflow: hidden;
+}
+.report-card .card-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
 }
 .report-card .card-badge {
   position: absolute;
@@ -2610,9 +2632,15 @@ body {
 .report-card .card-badge.데이터 {
   background: #20c997;
 }
+.report-card .card-content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+}
 .report-card .card-content h3 {
-  font-size: 18px;
-  margin-bottom: 12px;
+  font-size: 14px;
+  margin-bottom: 0px;
+  margin-top: 8px;
 }
 .report-card .card-content p {
   font-size: 14px;
@@ -2623,28 +2651,21 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.report-card .card-meta {
-  flex-direction: column;
-  gap: 8px;
-  margin-bottom: 12px;
-}
-.report-card .card-meta span {
-  font-size: 13px;
-}
-.report-card .card-meta .category {
-  color: #FF6C11;
-  font-weight: 500;
-}
 .report-card .card-footer {
+  border-top: none;
+  border-bottom: 1px solid #eee;
   flex-direction: column;
   gap: 15px;
   align-items: flex-start;
+  padding-top: 0px;
+  padding-bottom: 8px;
 }
 
 .report-info {
   display: flex;
   gap: 15px;
   align-items: center;
+  width: 100%;
 }
 .report-info .file-type {
   background: #f0f0f0;
@@ -2654,13 +2675,12 @@ body {
   font-size: 12px;
   font-weight: bold;
 }
-.report-info .file-size {
-  color: #999;
-  font-size: 12px;
-}
 .report-info .pages {
   color: #666;
   font-size: 12px;
+}
+.report-info .btn-detail {
+  margin-left: auto;
 }
 
 /* 아카이브 섹션 */
